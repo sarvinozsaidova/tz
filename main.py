@@ -24,3 +24,13 @@ print(f"99-karta: {credit}")
 
 credit = vendingMachine.getCredit(50)
 print(f"50-karta: {credit}")
+
+
+
+vendingMachine.refillColumn(1, "Coca Cola", 1)
+vendingMachine.refillColumn(2, "Water", 10)
+vendingMachine.refillColumn(3, "Pepsi", 15)
+vendingMachine.refillColumn(4, "Water", 20)
+
+available_cans = vendingMachine.availableCans()
+print("Available cans:", available_cans)
